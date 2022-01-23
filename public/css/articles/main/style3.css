@@ -10612,7 +10612,7 @@ header .navbar-bottom .navbar-toggler {
 }
 
 .content-wrapper {
-  background: #e6e7e8;
+  background: linear-gradient(#141e30, #243b55);
   width: 100vw;
   min-height: 100vh;
   padding: 80px 0;
