@@ -1,0 +1,34 @@
+nav.navbar2 {
+	position: absolute;
+	z-index: 9500;
+	width: 100%;
+	width: 100vw;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+nav.navbar2 .navbar2-nav li.active a:not(.btn) {
+	color: #00a8ff !important;
+}
+nav.navbar2-fixed-top {
+	z-index: 9499;
+	top: 0;
+	padding: 25px 0;
+	opacity: 0;
+	background: white;
+	box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05);
+}
+nav.navbar2-fixed-top .navbar2-nav > li > a:not(.btn) {
+	color: #bbb;
+}
+
+.navbar2 {
+	top: 50px;
+}
+
+.container2 {
+	position: relative;
+	z-index: 1;
+}
+header .container2 {
+	height: 100%;
+}

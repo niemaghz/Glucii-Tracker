@@ -1,23 +1,33 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ChartjsController!
+{% block title %}Hello Get statistics
 {% endblock %}
 
 {% block body %}
-	<style>
-		.example-wrapper {
-			margin: 1em auto;
-			max-width: 800px;
-			width: 95%;
-			font: 18px / 1.5 sans-serif;
-		}
-		.example-wrapper code {
-			background: #F5F5F5;
-			padding: 2px 6px;
-		}
-	</style>
-	<div class='example-wrapper'>
-		{{ render_chart(chart, {'id': 'my-chart'})}}
+	<div>
+		<link rel="stylesheet" href="css/navbar.css">
+		<style>
+			.example-wrapper {
+				margin: 1em auto;
+				max-width: 800px;
+				width: 95%;
+				font: 18px / 1.5 sans-serif;
+			}
+			.example-wrapper code {
+				background: #F5F5F5;
+				padding: 2px 6px;
+			}
+		</style>
+		<nav>
+			<a href="/home">Home</a>
+			<a href="/home#team">About us</a>
+			<a href="/ratio">Get dose</a>
+			<a href="/chartjs">Your statistics</a>
+			<a href="/logout">logout</a>
+			<div class="animation start-home"></div>
+		</nav>
+		<div class='example-wrapper'>
+			{{ render_chart(chart, {'id': 'my-chart'})}}
 
-	</div>
-{% endblock %}
+		</div>
+	{% endblock %}
