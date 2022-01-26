@@ -14,10 +14,8 @@
 	{% block body %}
 		<nav>
 			<a href="/home">Home</a>
-			<a href="/home#team">About us</a>
-			<a href="/ratio">Get dose</a>
-			<a href="/chartjs">Your statistics</a>
-			<a href="/logout">logout</a>
+			<a href="/register">Register</a>
+
 			<div class="animation start-home"></div>
 		</nav>
 		<div class="login-box">
@@ -48,15 +46,15 @@
 				type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
 
 				{#
-																Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
-																See https://symfony.com/doc/current/security/remember_me.html
-																
-																<div class="checkbox mb-3">
-																<label>
-																<input type="checkbox" name="_remember_me"> Remember me
-																</label>
-																</div>
-																#}
+																								Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+																								See https://symfony.com/doc/current/security/remember_me.html
+																								
+																								<div class="checkbox mb-3">
+																								<label>
+																								<input type="checkbox" name="_remember_me"> Remember me
+																								</label>
+																								</div>
+																								#}
 				<span></span>
 				<span></span>
 				<span></span>
