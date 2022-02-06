@@ -23,12 +23,6 @@ class ChartjsController extends AbstractController
         $labels = [];
         $datas = [];
 
-        /*   foreach ($data as $x) {
-            if ($x->getPatient()->getId() == (int) $userInterface->getId()) {
-                $labels[] = $x->getCreatedAt()->format('d/m/Y H:m');
-                $datas[] = $x->getInsuline();
-            }
-        }*/
         foreach ($data as $x) {
 
             $labels[] = $x['Day'];

@@ -24,8 +24,6 @@ class PatientCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
 
-
-
         return [
             IdField::new('id')->hideOnForm(),
             ArrayField::new('roles'),
@@ -35,11 +33,5 @@ class PatientCrudController extends AbstractCrudController
             TextField::new('password'),
 
         ];
-        /*
-        return [
-            IdField::new('id'),
-            TextField::new('title'),
-            TextEditorField::new('description'),
-        ]; */
     }
 }

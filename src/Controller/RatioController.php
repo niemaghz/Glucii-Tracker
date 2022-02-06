@@ -46,6 +46,7 @@ class RatioController extends AbstractController
             'Ratio' => $form->createView(), 'insuline' => $insuline
         ]);
     }
+    //retourne le nombre d'unité d'insuline
     public function calculate(float $glycemie, float $glucide)
     {
 

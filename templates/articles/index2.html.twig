@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="UTF-8"/>
+
+		<title>Article</title>
+		{% set navbar = "css/navbar.css" %}
+		<link rel="stylesheet" href="{{ asset (''~navbar)}}">
+	</head>
+	<body style="background-color: white; padding-left :200px;padding-right :200px;">
+		<nav>
+			<a href="/home">Home</a>
+			<a href="/home#info">About us</a>
+			<a href="/ratio">Get dose</a>
+			<a href="/chartjs">Your statistics</a>
+			<a href="/logout">logout</a>
+			<div class="animation start-home"></div>
+		</nav>
+		{% set titre = article[0].getTitre() %}
+		{% set texte = article[0].contenu %}
+		{% set description = article[0].description %}
+		{% set img1 = article[0].getImage() %}
+		<h1 style="color:black ;text-align: center; padding-top: 50px;padding: bottom 30px;">{{description|raw}}</h1>
+		<p align="center">
+			<img src="{{ asset ((''~article[0].getImage())) }} " alt=""/>
+		</p>
+		<p align="center">
+
+			{{ texte|raw }}</p>
+		<div style="color: black; font-size:20px"></div>
+	</body>
+</html>

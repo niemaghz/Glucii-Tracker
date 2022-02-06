@@ -184,7 +184,7 @@
      /* others
       */
      --color-white-bg: white;
-     --color-body    :  linear-gradient(#141e30, #243b55);
+     --color-body    :  white;
      --color-border  : var(--color-gray-2);
  }
  
